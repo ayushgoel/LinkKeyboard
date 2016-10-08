@@ -1,0 +1,1168 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1E400D1CC2D49F004E102A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E400C1CC2D49F004E102A /* SnapshotHelper.swift */; };
+		8E3A5E071CB22DC300C426D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA23F91C9EB88300B40227 /* Assets.xcassets */; };
+		8E3A5E081CB22DC400C426D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA23F91C9EB88300B40227 /* Assets.xcassets */; };
+		8E88E6291CCBEE7300A06D75 /* String+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E88E6281CCBEE7300A06D75 /* String+Size.swift */; };
+		8EB1CC7E1CB14CA400C6EC6E /* String+URLVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1CC7D1CB14CA400C6EC6E /* String+URLVerification.swift */; };
+		8EB1CC871CB158FC00C6EC6E /* LinksGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB1CC861CB158FC00C6EC6E /* LinksGetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EB1CC8E1CB158FC00C6EC6E /* LinksGetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB1CC841CB158FC00C6EC6E /* LinksGetter.framework */; };
+		8EB1CC951CB158FC00C6EC6E /* LinksGetterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1CC941CB158FC00C6EC6E /* LinksGetterTests.swift */; };
+		8EB1CC991CB158FC00C6EC6E /* LinksGetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB1CC841CB158FC00C6EC6E /* LinksGetter.framework */; };
+		8EB1CC9A1CB158FC00C6EC6E /* LinksGetter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB1CC841CB158FC00C6EC6E /* LinksGetter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8EB1CCA31CB1594600C6EC6E /* LinksGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1CCA21CB1594600C6EC6E /* LinksGetter.swift */; };
+		8EB1CCA41CB15AB500C6EC6E /* LinksGetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB1CC841CB158FC00C6EC6E /* LinksGetter.framework */; };
+		8EB1CCAC1CB15D6F00C6EC6E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1CCAB1CB15D6F00C6EC6E /* ShareViewController.swift */; };
+		8EB1CCAF1CB15D6F00C6EC6E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB1CCAD1CB15D6F00C6EC6E /* MainInterface.storyboard */; };
+		8EB1CCB31CB15D6F00C6EC6E /* LinksKeyboardShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8EB1CCA91CB15D6F00C6EC6E /* LinksKeyboardShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8EB1CCB81CB1608300C6EC6E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB1CCB71CB1608300C6EC6E /* Media.xcassets */; };
+		8EB1CCB91CB165C000C6EC6E /* LinksGetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB1CC841CB158FC00C6EC6E /* LinksGetter.framework */; };
+		8EB1CCBC1CB17FBC00C6EC6E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB1CCBB1CB17FBC00C6EC6E /* Media.xcassets */; };
+		8EB1CCC21CB1899D00C6EC6E /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB1CCC01CB1899D00C6EC6E /* Fabric.framework */; };
+		8EB1CCC31CB1899E00C6EC6E /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB1CCC11CB1899D00C6EC6E /* Crashlytics.framework */; };
+		8ECA23F31C9EB88300B40227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA23F21C9EB88300B40227 /* AppDelegate.swift */; };
+		8ECA23F51C9EB88300B40227 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA23F41C9EB88300B40227 /* ViewController.swift */; };
+		8ECA23F81C9EB88300B40227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA23F61C9EB88300B40227 /* Main.storyboard */; };
+		8ECA23FA1C9EB88300B40227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA23F91C9EB88300B40227 /* Assets.xcassets */; };
+		8ECA23FD1C9EB88300B40227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA23FB1C9EB88300B40227 /* LaunchScreen.storyboard */; };
+		8ECA24081C9EB88300B40227 /* LinkKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA24071C9EB88300B40227 /* LinkKeyboardTests.swift */; };
+		8ECA24131C9EB88300B40227 /* LinkKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA24121C9EB88300B40227 /* LinkKeyboardUITests.swift */; };
+		8ECA244D1C9EBF6800B40227 /* LinkKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8ECA24461C9EBF6800B40227 /* LinkKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8ECA24551C9EBFAF00B40227 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA24531C9EBFAF00B40227 /* KeyboardViewController.swift */; };
+		8ECA24581C9ED73B00B40227 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA24571C9ED73B00B40227 /* KeyboardView.swift */; };
+		8ECA245A1C9ED75300B40227 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA24591C9ED75300B40227 /* KeyboardView.xib */; };
+		8ECA245F1C9EE3F500B40227 /* LinkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA245D1C9EE3F500B40227 /* LinkCollectionViewCell.swift */; };
+		8ECA24601C9EE3F500B40227 /* LinkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA245E1C9EE3F500B40227 /* LinkCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EB1CC8F1CB158FC00C6EC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ECA23E71C9EB88300B40227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EB1CC831CB158FC00C6EC6E;
+			remoteInfo = LinksGetter;
+		};
+		8EB1CC911CB158FC00C6EC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ECA23E71C9EB88300B40227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ECA23EE1C9EB88300B40227;
+			remoteInfo = LinkKeyboard;
+		};
+		8EB1CC971CB158FC00C6EC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ECA23E71C9EB88300B40227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EB1CC831CB158FC00C6EC6E;
+			remoteInfo = LinksGetter;
+		};
+		8EB1CCB11CB15D6F00C6EC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ECA23E71C9EB88300B40227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EB1CCA81CB15D6F00C6EC6E;
+			remoteInfo = LinksKeyboardShare;
+		};
+		8ECA24041C9EB88300B40227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ECA23E71C9EB88300B40227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ECA23EE1C9EB88300B40227;
+			remoteInfo = LinkKeyboard;
+		};
+		8ECA240F1C9EB88300B40227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ECA23E71C9EB88300B40227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ECA23EE1C9EB88300B40227;
+			remoteInfo = LinkKeyboard;
+		};
+		8ECA244B1C9EBF6800B40227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ECA23E71C9EB88300B40227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ECA24451C9EBF6800B40227;
+			remoteInfo = LinkKeyboardExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8EB1CC9E1CB158FC00C6EC6E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8EB1CC9A1CB158FC00C6EC6E /* LinksGetter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA24511C9EBF6800B40227 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8ECA244D1C9EBF6800B40227 /* LinkKeyboardExtension.appex in Embed App Extensions */,
+				8EB1CCB31CB15D6F00C6EC6E /* LinksKeyboardShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8E1E400C1CC2D49F004E102A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		8E88E6281CCBEE7300A06D75 /* String+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Size.swift"; sourceTree = "<group>"; };
+		8EB1CC7D1CB14CA400C6EC6E /* String+URLVerification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URLVerification.swift"; sourceTree = "<group>"; };
+		8EB1CC841CB158FC00C6EC6E /* LinksGetter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LinksGetter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB1CC861CB158FC00C6EC6E /* LinksGetter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinksGetter.h; sourceTree = "<group>"; };
+		8EB1CC881CB158FC00C6EC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB1CC8D1CB158FC00C6EC6E /* LinksGetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinksGetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB1CC941CB158FC00C6EC6E /* LinksGetterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksGetterTests.swift; sourceTree = "<group>"; };
+		8EB1CC961CB158FC00C6EC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB1CCA21CB1594600C6EC6E /* LinksGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinksGetter.swift; sourceTree = "<group>"; };
+		8EB1CCA91CB15D6F00C6EC6E /* LinksKeyboardShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LinksKeyboardShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB1CCAB1CB15D6F00C6EC6E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		8EB1CCAE1CB15D6F00C6EC6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8EB1CCB01CB15D6F00C6EC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB1CCB71CB1608300C6EC6E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		8EB1CCBA1CB1730400C6EC6E /* LinksKeyboardShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LinksKeyboardShare.entitlements; sourceTree = "<group>"; };
+		8EB1CCBB1CB17FBC00C6EC6E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		8EB1CCC01CB1899D00C6EC6E /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		8EB1CCC11CB1899D00C6EC6E /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		8ECA23EF1C9EB88300B40227 /* LinkKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECA23F21C9EB88300B40227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8ECA23F41C9EB88300B40227 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8ECA23F71C9EB88300B40227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8ECA23F91C9EB88300B40227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8ECA23FC1C9EB88300B40227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8ECA23FE1C9EB88300B40227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECA24031C9EB88300B40227 /* LinkKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECA24071C9EB88300B40227 /* LinkKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkKeyboardTests.swift; sourceTree = "<group>"; };
+		8ECA24091C9EB88300B40227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECA240E1C9EB88300B40227 /* LinkKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECA24121C9EB88300B40227 /* LinkKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkKeyboardUITests.swift; sourceTree = "<group>"; };
+		8ECA24141C9EB88300B40227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECA24461C9EBF6800B40227 /* LinkKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LinkKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECA24521C9EBFAF00B40227 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECA24531C9EBFAF00B40227 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		8ECA24561C9ED17A00B40227 /* LinkKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LinkKeyboard.entitlements; sourceTree = "<group>"; };
+		8ECA24571C9ED73B00B40227 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		8ECA24591C9ED75300B40227 /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		8ECA245D1C9EE3F500B40227 /* LinkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ECA245E1C9EE3F500B40227 /* LinkCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkCollectionViewCell.xib; sourceTree = "<group>"; };
+		8ECA24611C9EE98E00B40227 /* LinkKeyboardExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LinkKeyboardExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EB1CC801CB158FC00C6EC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB1CC8A1CB158FC00C6EC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB1CC8E1CB158FC00C6EC6E /* LinksGetter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB1CCA61CB15D6F00C6EC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB1CCB91CB165C000C6EC6E /* LinksGetter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA23EC1C9EB88300B40227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB1CC991CB158FC00C6EC6E /* LinksGetter.framework in Frameworks */,
+				8EB1CCC31CB1899E00C6EC6E /* Crashlytics.framework in Frameworks */,
+				8EB1CCC21CB1899D00C6EC6E /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA24001C9EB88300B40227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA240B1C9EB88300B40227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA24431C9EBF6800B40227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB1CCA41CB15AB500C6EC6E /* LinksGetter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EB1CC851CB158FC00C6EC6E /* LinksGetter */ = {
+			isa = PBXGroup;
+			children = (
+				8EB1CC861CB158FC00C6EC6E /* LinksGetter.h */,
+				8EB1CCA21CB1594600C6EC6E /* LinksGetter.swift */,
+				8EB1CC881CB158FC00C6EC6E /* Info.plist */,
+			);
+			path = LinksGetter;
+			sourceTree = "<group>";
+		};
+		8EB1CC931CB158FC00C6EC6E /* LinksGetterTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EB1CC941CB158FC00C6EC6E /* LinksGetterTests.swift */,
+				8EB1CC961CB158FC00C6EC6E /* Info.plist */,
+			);
+			path = LinksGetterTests;
+			sourceTree = "<group>";
+		};
+		8EB1CCAA1CB15D6F00C6EC6E /* LinksKeyboardShare */ = {
+			isa = PBXGroup;
+			children = (
+				8EB1CCBA1CB1730400C6EC6E /* LinksKeyboardShare.entitlements */,
+				8EB1CCAB1CB15D6F00C6EC6E /* ShareViewController.swift */,
+				8EB1CCAD1CB15D6F00C6EC6E /* MainInterface.storyboard */,
+				8EB1CCB01CB15D6F00C6EC6E /* Info.plist */,
+				8EB1CCB71CB1608300C6EC6E /* Media.xcassets */,
+			);
+			path = LinksKeyboardShare;
+			sourceTree = "<group>";
+		};
+		8EB1CCBF1CB1898400C6EC6E /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				8EB1CCC01CB1899D00C6EC6E /* Fabric.framework */,
+				8EB1CCC11CB1899D00C6EC6E /* Crashlytics.framework */,
+			);
+			name = Fabric;
+			sourceTree = "<group>";
+		};
+		8ECA23E61C9EB88300B40227 = {
+			isa = PBXGroup;
+			children = (
+				8ECA23F11C9EB88300B40227 /* LinkKeyboard */,
+				8ECA24061C9EB88300B40227 /* LinkKeyboardTests */,
+				8ECA24111C9EB88300B40227 /* LinkKeyboardUITests */,
+				8ECA24471C9EBF6800B40227 /* LinkKeyboardExtension */,
+				8EB1CC851CB158FC00C6EC6E /* LinksGetter */,
+				8EB1CC931CB158FC00C6EC6E /* LinksGetterTests */,
+				8EB1CCAA1CB15D6F00C6EC6E /* LinksKeyboardShare */,
+				8ECA23F01C9EB88300B40227 /* Products */,
+				8EB1CCBF1CB1898400C6EC6E /* Fabric */,
+			);
+			sourceTree = "<group>";
+		};
+		8ECA23F01C9EB88300B40227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA23EF1C9EB88300B40227 /* LinkKeyboard.app */,
+				8ECA24031C9EB88300B40227 /* LinkKeyboardTests.xctest */,
+				8ECA240E1C9EB88300B40227 /* LinkKeyboardUITests.xctest */,
+				8ECA24461C9EBF6800B40227 /* LinkKeyboardExtension.appex */,
+				8EB1CC841CB158FC00C6EC6E /* LinksGetter.framework */,
+				8EB1CC8D1CB158FC00C6EC6E /* LinksGetterTests.xctest */,
+				8EB1CCA91CB15D6F00C6EC6E /* LinksKeyboardShare.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ECA23F11C9EB88300B40227 /* LinkKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA24561C9ED17A00B40227 /* LinkKeyboard.entitlements */,
+				8ECA23F21C9EB88300B40227 /* AppDelegate.swift */,
+				8ECA23F41C9EB88300B40227 /* ViewController.swift */,
+				8EB1CC7D1CB14CA400C6EC6E /* String+URLVerification.swift */,
+				8ECA23F61C9EB88300B40227 /* Main.storyboard */,
+				8ECA23F91C9EB88300B40227 /* Assets.xcassets */,
+				8ECA23FB1C9EB88300B40227 /* LaunchScreen.storyboard */,
+				8ECA23FE1C9EB88300B40227 /* Info.plist */,
+			);
+			path = LinkKeyboard;
+			sourceTree = "<group>";
+		};
+		8ECA24061C9EB88300B40227 /* LinkKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA24071C9EB88300B40227 /* LinkKeyboardTests.swift */,
+				8ECA24091C9EB88300B40227 /* Info.plist */,
+			);
+			path = LinkKeyboardTests;
+			sourceTree = "<group>";
+		};
+		8ECA24111C9EB88300B40227 /* LinkKeyboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA24121C9EB88300B40227 /* LinkKeyboardUITests.swift */,
+				8E1E400C1CC2D49F004E102A /* SnapshotHelper.swift */,
+				8ECA24141C9EB88300B40227 /* Info.plist */,
+			);
+			path = LinkKeyboardUITests;
+			sourceTree = "<group>";
+		};
+		8ECA24471C9EBF6800B40227 /* LinkKeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA24611C9EE98E00B40227 /* LinkKeyboardExtension.entitlements */,
+				8ECA24521C9EBFAF00B40227 /* Info.plist */,
+				8ECA24571C9ED73B00B40227 /* KeyboardView.swift */,
+				8ECA24591C9ED75300B40227 /* KeyboardView.xib */,
+				8EB1CCBB1CB17FBC00C6EC6E /* Media.xcassets */,
+				8ECA245D1C9EE3F500B40227 /* LinkCollectionViewCell.swift */,
+				8ECA245E1C9EE3F500B40227 /* LinkCollectionViewCell.xib */,
+				8ECA24531C9EBFAF00B40227 /* KeyboardViewController.swift */,
+				8E88E6281CCBEE7300A06D75 /* String+Size.swift */,
+			);
+			path = LinkKeyboardExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8EB1CC811CB158FC00C6EC6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB1CC871CB158FC00C6EC6E /* LinksGetter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8EB1CC831CB158FC00C6EC6E /* LinksGetter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB1CC9B1CB158FC00C6EC6E /* Build configuration list for PBXNativeTarget "LinksGetter" */;
+			buildPhases = (
+				8EB1CC7F1CB158FC00C6EC6E /* Sources */,
+				8EB1CC801CB158FC00C6EC6E /* Frameworks */,
+				8EB1CC811CB158FC00C6EC6E /* Headers */,
+				8EB1CC821CB158FC00C6EC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinksGetter;
+			productName = LinksGetter;
+			productReference = 8EB1CC841CB158FC00C6EC6E /* LinksGetter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8EB1CC8C1CB158FC00C6EC6E /* LinksGetterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB1CC9F1CB158FC00C6EC6E /* Build configuration list for PBXNativeTarget "LinksGetterTests" */;
+			buildPhases = (
+				8EB1CC891CB158FC00C6EC6E /* Sources */,
+				8EB1CC8A1CB158FC00C6EC6E /* Frameworks */,
+				8EB1CC8B1CB158FC00C6EC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EB1CC901CB158FC00C6EC6E /* PBXTargetDependency */,
+				8EB1CC921CB158FC00C6EC6E /* PBXTargetDependency */,
+			);
+			name = LinksGetterTests;
+			productName = LinksGetterTests;
+			productReference = 8EB1CC8D1CB158FC00C6EC6E /* LinksGetterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EB1CCA81CB15D6F00C6EC6E /* LinksKeyboardShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB1CCB41CB15D6F00C6EC6E /* Build configuration list for PBXNativeTarget "LinksKeyboardShare" */;
+			buildPhases = (
+				8EB1CCA51CB15D6F00C6EC6E /* Sources */,
+				8EB1CCA61CB15D6F00C6EC6E /* Frameworks */,
+				8EB1CCA71CB15D6F00C6EC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinksKeyboardShare;
+			productName = LinksKeyboardShare;
+			productReference = 8EB1CCA91CB15D6F00C6EC6E /* LinksKeyboardShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8ECA23EE1C9EB88300B40227 /* LinkKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECA24171C9EB88300B40227 /* Build configuration list for PBXNativeTarget "LinkKeyboard" */;
+			buildPhases = (
+				8ECA23EB1C9EB88300B40227 /* Sources */,
+				8ECA23EC1C9EB88300B40227 /* Frameworks */,
+				8ECA23ED1C9EB88300B40227 /* Resources */,
+				8ECA24511C9EBF6800B40227 /* Embed App Extensions */,
+				8EB1CC9E1CB158FC00C6EC6E /* Embed Frameworks */,
+				8EB1CCBE1CB1894E00C6EC6E /* Fabric */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ECA244C1C9EBF6800B40227 /* PBXTargetDependency */,
+				8EB1CC981CB158FC00C6EC6E /* PBXTargetDependency */,
+				8EB1CCB21CB15D6F00C6EC6E /* PBXTargetDependency */,
+			);
+			name = LinkKeyboard;
+			productName = LinkKeyboard;
+			productReference = 8ECA23EF1C9EB88300B40227 /* LinkKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8ECA24021C9EB88300B40227 /* LinkKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECA241A1C9EB88300B40227 /* Build configuration list for PBXNativeTarget "LinkKeyboardTests" */;
+			buildPhases = (
+				8ECA23FF1C9EB88300B40227 /* Sources */,
+				8ECA24001C9EB88300B40227 /* Frameworks */,
+				8ECA24011C9EB88300B40227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ECA24051C9EB88300B40227 /* PBXTargetDependency */,
+			);
+			name = LinkKeyboardTests;
+			productName = LinkKeyboardTests;
+			productReference = 8ECA24031C9EB88300B40227 /* LinkKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8ECA240D1C9EB88300B40227 /* LinkKeyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECA241D1C9EB88300B40227 /* Build configuration list for PBXNativeTarget "LinkKeyboardUITests" */;
+			buildPhases = (
+				8ECA240A1C9EB88300B40227 /* Sources */,
+				8ECA240B1C9EB88300B40227 /* Frameworks */,
+				8ECA240C1C9EB88300B40227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ECA24101C9EB88300B40227 /* PBXTargetDependency */,
+			);
+			name = LinkKeyboardUITests;
+			productName = LinkKeyboardUITests;
+			productReference = 8ECA240E1C9EB88300B40227 /* LinkKeyboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8ECA24451C9EBF6800B40227 /* LinkKeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECA24501C9EBF6800B40227 /* Build configuration list for PBXNativeTarget "LinkKeyboardExtension" */;
+			buildPhases = (
+				8ECA24421C9EBF6800B40227 /* Sources */,
+				8ECA24431C9EBF6800B40227 /* Frameworks */,
+				8ECA24441C9EBF6800B40227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkKeyboardExtension;
+			productName = LinkKeyboardExtension;
+			productReference = 8ECA24461C9EBF6800B40227 /* LinkKeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ECA23E71C9EB88300B40227 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ayush Goel";
+				TargetAttributes = {
+					8EB1CC831CB158FC00C6EC6E = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = D6L87QSKNY;
+					};
+					8EB1CC8C1CB158FC00C6EC6E = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8ECA23EE1C9EB88300B40227;
+					};
+					8EB1CCA81CB15D6F00C6EC6E = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = D6L87QSKNY;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					8ECA23EE1C9EB88300B40227 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = D6L87QSKNY;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					8ECA24021C9EB88300B40227 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8ECA23EE1C9EB88300B40227;
+					};
+					8ECA240D1C9EB88300B40227 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8ECA23EE1C9EB88300B40227;
+					};
+					8ECA24451C9EBF6800B40227 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = D6L87QSKNY;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8ECA23EA1C9EB88300B40227 /* Build configuration list for PBXProject "LinkKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8ECA23E61C9EB88300B40227;
+			productRefGroup = 8ECA23F01C9EB88300B40227 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ECA23EE1C9EB88300B40227 /* LinkKeyboard */,
+				8ECA24021C9EB88300B40227 /* LinkKeyboardTests */,
+				8ECA240D1C9EB88300B40227 /* LinkKeyboardUITests */,
+				8ECA24451C9EBF6800B40227 /* LinkKeyboardExtension */,
+				8EB1CC831CB158FC00C6EC6E /* LinksGetter */,
+				8EB1CC8C1CB158FC00C6EC6E /* LinksGetterTests */,
+				8EB1CCA81CB15D6F00C6EC6E /* LinksKeyboardShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EB1CC821CB158FC00C6EC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB1CC8B1CB158FC00C6EC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB1CCA71CB15D6F00C6EC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB1CCB81CB1608300C6EC6E /* Media.xcassets in Resources */,
+				8E3A5E081CB22DC400C426D9 /* Assets.xcassets in Resources */,
+				8EB1CCAF1CB15D6F00C6EC6E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA23ED1C9EB88300B40227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECA23FD1C9EB88300B40227 /* LaunchScreen.storyboard in Resources */,
+				8ECA23FA1C9EB88300B40227 /* Assets.xcassets in Resources */,
+				8ECA23F81C9EB88300B40227 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA24011C9EB88300B40227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA240C1C9EB88300B40227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA24441C9EBF6800B40227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECA24601C9EE3F500B40227 /* LinkCollectionViewCell.xib in Resources */,
+				8EB1CCBC1CB17FBC00C6EC6E /* Media.xcassets in Resources */,
+				8E3A5E071CB22DC300C426D9 /* Assets.xcassets in Resources */,
+				8ECA245A1C9ED75300B40227 /* KeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EB1CCBE1CB1894E00C6EC6E /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 12da8d09cfea4f09082d62db02dd456dc7ec8ef2 f5c1b75824b8409a40d757fe69eadb67187501031ca519853d0ab5accb870ee3";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EB1CC7F1CB158FC00C6EC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB1CCA31CB1594600C6EC6E /* LinksGetter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB1CC891CB158FC00C6EC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB1CC951CB158FC00C6EC6E /* LinksGetterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB1CCA51CB15D6F00C6EC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB1CCAC1CB15D6F00C6EC6E /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA23EB1C9EB88300B40227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECA23F51C9EB88300B40227 /* ViewController.swift in Sources */,
+				8ECA23F31C9EB88300B40227 /* AppDelegate.swift in Sources */,
+				8EB1CC7E1CB14CA400C6EC6E /* String+URLVerification.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA23FF1C9EB88300B40227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECA24081C9EB88300B40227 /* LinkKeyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA240A1C9EB88300B40227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECA24131C9EB88300B40227 /* LinkKeyboardUITests.swift in Sources */,
+				8E1E400D1CC2D49F004E102A /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA24421C9EBF6800B40227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECA245F1C9EE3F500B40227 /* LinkCollectionViewCell.swift in Sources */,
+				8E88E6291CCBEE7300A06D75 /* String+Size.swift in Sources */,
+				8ECA24551C9EBFAF00B40227 /* KeyboardViewController.swift in Sources */,
+				8ECA24581C9ED73B00B40227 /* KeyboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EB1CC901CB158FC00C6EC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EB1CC831CB158FC00C6EC6E /* LinksGetter */;
+			targetProxy = 8EB1CC8F1CB158FC00C6EC6E /* PBXContainerItemProxy */;
+		};
+		8EB1CC921CB158FC00C6EC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ECA23EE1C9EB88300B40227 /* LinkKeyboard */;
+			targetProxy = 8EB1CC911CB158FC00C6EC6E /* PBXContainerItemProxy */;
+		};
+		8EB1CC981CB158FC00C6EC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EB1CC831CB158FC00C6EC6E /* LinksGetter */;
+			targetProxy = 8EB1CC971CB158FC00C6EC6E /* PBXContainerItemProxy */;
+		};
+		8EB1CCB21CB15D6F00C6EC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EB1CCA81CB15D6F00C6EC6E /* LinksKeyboardShare */;
+			targetProxy = 8EB1CCB11CB15D6F00C6EC6E /* PBXContainerItemProxy */;
+		};
+		8ECA24051C9EB88300B40227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ECA23EE1C9EB88300B40227 /* LinkKeyboard */;
+			targetProxy = 8ECA24041C9EB88300B40227 /* PBXContainerItemProxy */;
+		};
+		8ECA24101C9EB88300B40227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ECA23EE1C9EB88300B40227 /* LinkKeyboard */;
+			targetProxy = 8ECA240F1C9EB88300B40227 /* PBXContainerItemProxy */;
+		};
+		8ECA244C1C9EBF6800B40227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ECA24451C9EBF6800B40227 /* LinkKeyboardExtension */;
+			targetProxy = 8ECA244B1C9EBF6800B40227 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EB1CCAD1CB15D6F00C6EC6E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EB1CCAE1CB15D6F00C6EC6E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		8ECA23F61C9EB88300B40227 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ECA23F71C9EB88300B40227 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8ECA23FB1C9EB88300B40227 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ECA23FC1C9EB88300B40227 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EB1CC9C1CB158FC00C6EC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LinksGetter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboard.LinksGetter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8EB1CC9D1CB158FC00C6EC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LinksGetter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboard.LinksGetter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8EB1CCA01CB158FC00C6EC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LinksGetterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboard.LinksGetterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkKeyboard.app/LinkKeyboard";
+			};
+			name = Debug;
+		};
+		8EB1CCA11CB158FC00C6EC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LinksGetterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboard.LinksGetterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkKeyboard.app/LinkKeyboard";
+			};
+			name = Release;
+		};
+		8EB1CCB51CB15D6F00C6EC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LinksKeyboardShare/LinksKeyboardShare.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LinksKeyboardShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboard.LinksKeyboardShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8EB1CCB61CB15D6F00C6EC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LinksKeyboardShare/LinksKeyboardShare.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LinksKeyboardShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboard.LinksKeyboardShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8ECA24151C9EB88300B40227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8ECA24161C9EB88300B40227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ECA24181C9EB88300B40227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LinkKeyboard/LinkKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LinkKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		8ECA24191C9EB88300B40227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LinkKeyboard/LinkKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LinkKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		8ECA241B1C9EB88300B40227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = LinkKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkKeyboard.app/LinkKeyboard";
+			};
+			name = Debug;
+		};
+		8ECA241C1C9EB88300B40227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = LinkKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkKeyboard.app/LinkKeyboard";
+			};
+			name = Release;
+		};
+		8ECA241E1C9EB88300B40227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LinkKeyboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LinkKeyboard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8ECA241F1C9EB88300B40227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LinkKeyboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LinkKeyboard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		8ECA244E1C9EBF6800B40227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LinkKeyboardExtension/LinkKeyboardExtension.entitlements;
+				INFOPLIST_FILE = LinkKeyboardExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboard.LinkKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8ECA244F1C9EBF6800B40227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LinkKeyboardExtension/LinkKeyboardExtension.entitlements;
+				INFOPLIST_FILE = LinkKeyboardExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techmyway.LinkKeyboard.LinkKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EB1CC9B1CB158FC00C6EC6E /* Build configuration list for PBXNativeTarget "LinksGetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB1CC9C1CB158FC00C6EC6E /* Debug */,
+				8EB1CC9D1CB158FC00C6EC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EB1CC9F1CB158FC00C6EC6E /* Build configuration list for PBXNativeTarget "LinksGetterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB1CCA01CB158FC00C6EC6E /* Debug */,
+				8EB1CCA11CB158FC00C6EC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EB1CCB41CB15D6F00C6EC6E /* Build configuration list for PBXNativeTarget "LinksKeyboardShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB1CCB51CB15D6F00C6EC6E /* Debug */,
+				8EB1CCB61CB15D6F00C6EC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECA23EA1C9EB88300B40227 /* Build configuration list for PBXProject "LinkKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECA24151C9EB88300B40227 /* Debug */,
+				8ECA24161C9EB88300B40227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECA24171C9EB88300B40227 /* Build configuration list for PBXNativeTarget "LinkKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECA24181C9EB88300B40227 /* Debug */,
+				8ECA24191C9EB88300B40227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECA241A1C9EB88300B40227 /* Build configuration list for PBXNativeTarget "LinkKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECA241B1C9EB88300B40227 /* Debug */,
+				8ECA241C1C9EB88300B40227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECA241D1C9EB88300B40227 /* Build configuration list for PBXNativeTarget "LinkKeyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECA241E1C9EB88300B40227 /* Debug */,
+				8ECA241F1C9EB88300B40227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECA24501C9EBF6800B40227 /* Build configuration list for PBXNativeTarget "LinkKeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECA244E1C9EBF6800B40227 /* Debug */,
+				8ECA244F1C9EBF6800B40227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ECA23E71C9EB88300B40227 /* Project object */;
+}

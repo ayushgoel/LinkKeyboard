@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Check increment-build-number exists
+command -v increment-build-number >/dev/null 2>&1 || { 
+	echo >&2 "I require increment-build-number but it's not installed.  Aborting."
+	exit 1
+	}
+
+increment-build-number LinkKeyboard/Info.plist
+increment-build-number LinkKeyboardExtension/Info.plist
+increment-build-number LinksKeyboardShare/Info.plist

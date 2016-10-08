@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j1y-V4-xli">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Share View Controller-->
+        <scene sceneID="ceB-am-kn3">
+            <objects>
+                <viewController id="j1y-V4-xli" customClass="ShareViewController" customModule="LinksKeyboardShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8bI-gs-bmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="d5i-Ba-RvD"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="wbc-yd-nQP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LkA-8N-wDl">
+                                <rect key="frame" x="162" y="231" width="276" height="138"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5rL-Dc-dae">
+                                    <rect key="frame" x="0.0" y="0.0" width="276" height="138"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbP-FX-QDw" userLabel="Container">
+                                            <rect key="frame" x="5" y="5" width="266" height="128"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ce-ax-CfG" userLabel="Cancel">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="128" id="7Ux-BN-e7w"/>
+                                                        <constraint firstAttribute="height" constant="128" id="ddU-nk-1Dk"/>
+                                                    </constraints>
+                                                    <color key="tintColor" red="0.61836939102564104" green="0.0" blue="0.00578902307391736" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" image="close"/>
+                                                    <connections>
+                                                        <action selector="cancelTapped:" destination="j1y-V4-xli" eventType="touchUpInside" id="37x-ba-Nyy"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUG-pw-sSe" userLabel="Add">
+                                                    <rect key="frame" x="138" y="0.0" width="128" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="128" id="XEq-d9-iXA"/>
+                                                        <constraint firstAttribute="height" constant="128" id="aHB-Ue-blD"/>
+                                                    </constraints>
+                                                    <color key="tintColor" red="0.0015728052899096755" green="0.55390625000000004" blue="0.0024403506119002249" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" image="add"/>
+                                                    <connections>
+                                                        <action selector="addTapped:" destination="j1y-V4-xli" eventType="touchUpInside" id="Aon-gc-0J6"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="HUG-pw-sSe" firstAttribute="leading" secondItem="1ce-ax-CfG" secondAttribute="trailing" constant="10" id="3R7-3C-oRD"/>
+                                                <constraint firstAttribute="bottom" secondItem="HUG-pw-sSe" secondAttribute="bottom" id="Qs1-Dj-M5K"/>
+                                                <constraint firstAttribute="trailing" secondItem="HUG-pw-sSe" secondAttribute="trailing" id="Qyf-0q-Jmo"/>
+                                                <constraint firstItem="1ce-ax-CfG" firstAttribute="leading" secondItem="SbP-FX-QDw" secondAttribute="leading" id="Sfk-JJ-llE"/>
+                                                <constraint firstItem="HUG-pw-sSe" firstAttribute="top" secondItem="SbP-FX-QDw" secondAttribute="top" id="YBa-iP-EKu"/>
+                                                <constraint firstItem="1ce-ax-CfG" firstAttribute="top" secondItem="SbP-FX-QDw" secondAttribute="top" id="bZU-OF-BW6"/>
+                                                <constraint firstAttribute="bottom" secondItem="1ce-ax-CfG" secondAttribute="bottom" id="iiV-jH-ojp"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="SbP-FX-QDw" secondAttribute="trailing" constant="5" id="7qz-Cb-fIo"/>
+                                        <constraint firstItem="SbP-FX-QDw" firstAttribute="top" secondItem="5rL-Dc-dae" secondAttribute="top" constant="5" id="VHg-6S-G9m"/>
+                                        <constraint firstAttribute="bottom" secondItem="SbP-FX-QDw" secondAttribute="bottom" constant="5" id="Xgd-N8-P0S"/>
+                                        <constraint firstItem="SbP-FX-QDw" firstAttribute="leading" secondItem="5rL-Dc-dae" secondAttribute="leading" constant="5" id="gDH-Vf-k0y"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LkA-8N-wDl" firstAttribute="centerY" secondItem="wbc-yd-nQP" secondAttribute="centerY" id="J6k-Lp-KaU"/>
+                            <constraint firstItem="LkA-8N-wDl" firstAttribute="centerX" secondItem="wbc-yd-nQP" secondAttribute="centerX" id="rgk-hR-QE7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButtonWidthConstraint" destination="XEq-d9-iXA" id="QFf-j9-aJu"/>
+                        <outlet property="cancelButtonWidthConstraint" destination="7Ux-BN-e7w" id="s64-Op-FKb"/>
+                        <outlet property="centerYConstraint" destination="J6k-Lp-KaU" id="ntz-C8-X1P"/>
+                        <outlet property="containerView" destination="SbP-FX-QDw" id="yVG-Rq-vFs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEy-Cv-SGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="539" y="97"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="256" height="256"/>
+        <image name="close" width="256" height="256"/>
+    </resources>
+</document>
