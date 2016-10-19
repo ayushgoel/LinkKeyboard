@@ -26,3 +26,5 @@ Ayush Goel, ayushgoel111@gmail.com
 ## License
 
 This project is available under the MIT license. See the [LICENSE][LICENSE] file for more info.
+
+[LICENSE]: LICENSE
