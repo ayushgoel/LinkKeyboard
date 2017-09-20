@@ -1,7 +1,7 @@
 
-##Setup
+## Setup
 
-* Setup up Crashlytics
+* Setup Crashlytics
   * Go to `Edit Scheme` and add environment variable `FABRIC_KEY` to your key.
 
 ## What is this repository for?
